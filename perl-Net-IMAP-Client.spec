@@ -6,15 +6,14 @@
 %define	pdir	Net
 %define	pnam	IMAP-Client
 Summary:	Net::IMAP::Client - Not so simple IMAP client library
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Net::IMAP::Client - Nie tak prosta biblioteka kliencka protokołu IMAP
 Name:		perl-Net-IMAP-Client
-Version:	0.9
+Version:	0.93
 Release:	1
-# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b974ece04e4196f3baa12c5518fc15bd
+# Source0-md5:	ebf441fc74abd4ed95446e7de4b4dcd9
 URL:		http://search.cpan.org/dist/Net-IMAP-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -26,13 +25,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net::IMAP::Client provides methods to access an IMAP server.  It aims
+Net::IMAP::Client provides methods to access an IMAP server. It aims
 to provide a simple and clean API, while employing a rigorous parser
 for IMAP responses in order to create Perl data structures from them.
 The code is simple, clean and extensible.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Net::IMAP::Client dostarcza metody dostępu do serwerów IMAP. Zamiarem
+biblioteki jest zapewnić proste API.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
