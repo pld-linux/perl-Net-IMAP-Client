@@ -7,12 +7,12 @@
 Summary:	Net::IMAP::Client - Not so simple IMAP client library
 Summary(pl.UTF-8):	Net::IMAP::Client - Nie tak prosta biblioteka kliencka protokołu IMAP
 Name:		perl-Net-IMAP-Client
-Version:	0.93
-Release:	2
+Version:	0.9511
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ebf441fc74abd4ed95446e7de4b4dcd9
+Source0:	https://www.cpan.org/authors/id/G/GA/GANGLION/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	f104d2320768d149c4af2b0bc57deade
 URL:		http://search.cpan.org/dist/Net-IMAP-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
